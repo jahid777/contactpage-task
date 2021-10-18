@@ -5,7 +5,15 @@
 
 .text-one {
   padding: 5px 0;
+  font-size: 1.7vw;
 }
 .text-two {
   padding: 5px 0;
+  font-size: 1.7vw;
+}
+.head-one {
+  font-size: 4vw;
+}
+.head-two {
+  font-size: 4vw;
 }

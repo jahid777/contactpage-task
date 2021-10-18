@@ -4,7 +4,7 @@ import Header from "../Header/Header";
 
 const Home = () => {
   return (
-    <div style={{ backgroundColor: "#F6F4F1" }}>
+    <div style={{ backgroundColor: "#F6F4F1", height: "100vh" }}>
       <Header />
       <Contact />
     </div>

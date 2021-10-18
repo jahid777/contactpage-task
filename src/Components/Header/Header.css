@@ -1,8 +1,9 @@
 .navbar-brand {
   letter-spacing: 1px !important;
+  font-size: 1.1rem;
 }
 .middle-header-text {
-  padding-left: 25%;
+  padding-left: 27%;
   font-family: "Untitled Sans", sans-serif;
   color: #1d1d1d;
 }
@@ -16,6 +17,7 @@ ul li a {
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.5s;
+  font-size: 1.1rem;
 }
 ul li a::after {
   position: absolute;
