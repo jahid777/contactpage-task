@@ -1,0 +1,47 @@
+.navbar-brand {
+  letter-spacing: 1px !important;
+}
+.middle-header-text {
+  padding-left: 25%;
+  font-family: "Untitled Sans", sans-serif;
+  color: #1d1d1d;
+}
+
+ul li {
+  padding: 0px 15px;
+}
+ul li a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+ul li a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  top: 100%;
+  left: 0;
+  background: black;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+/* ul li a:hover {
+  color: #95a5a6;
+} */
+ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+ul li a.activeNab {
+  border-bottom: 1px solid black;
+}
+@media (max-width: 630px) {
+  .middle-header-text {
+    padding-left: 0px;
+  }
+}
