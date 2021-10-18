@@ -1,11 +1,15 @@
 .navbar-brand {
   letter-spacing: 1px !important;
   font-size: 1.1rem;
+  font-weight: bold;
 }
 .middle-header-text {
   padding-left: 27%;
-  font-family: "Untitled Sans", sans-serif;
+  font-family: "DM Serif Display", serif;
   color: #1d1d1d;
+  font-size: 0.9vw;
+  line-height: 0.9vw;
+  font-weight: 400;
 }
 
 ul li {
@@ -18,6 +22,8 @@ ul li a {
   text-transform: uppercase;
   transition: 0.5s;
   font-size: 1.1rem;
+  font-weight: bold;
+  color: black !important;
 }
 ul li a::after {
   position: absolute;
@@ -31,9 +37,7 @@ ul li a::after {
   transform: scaleX(0);
   transform-origin: right;
 }
-/* ul li a:hover {
-  color: #95a5a6;
-} */
+
 ul li a:hover::after {
   transform: scaleX(1);
   transform-origin: left;

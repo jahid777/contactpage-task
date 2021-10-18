@@ -1,19 +1,71 @@
 .contact-heading {
   font-family: "DM Serif Display", serif;
-  font-size: 120px;
+  font-size: 100px;
 }
 
 .text-one {
-  padding: 5px 0;
+  padding: 3px 0;
   font-size: 1.7vw;
 }
 .text-two {
-  padding: 5px 0;
+  padding: 3px 0;
   font-size: 1.7vw;
 }
 .head-one {
-  font-size: 4vw;
+  font-size: 50px;
 }
 .head-two {
-  font-size: 4vw;
+  font-size: 50px;
+}
+
+/* underline animation */
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* when first loading color will come black */
+.contact::before {
+  content: "";
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #0a0a0a;
+  position: fixed;
+  left: 0;
+  top: 0;
+  will-change: height, top;
+  animation: open-animation 0.5s cubic-bezier(0.83, 0.04, 0, 1.16) 0.65s both;
+}
+
+@keyframes open-animation {
+  0% {
+    height: 100vh;
+    top: 0;
+  }
+  /* 50% {
+  height: 100vh;
+  top: 0;
+} */
+  100% {
+    height: 0;
+    top: 0;
+  }
 }
